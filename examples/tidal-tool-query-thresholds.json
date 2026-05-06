@@ -1,0 +1,17 @@
+{
+  "repo": "tidal-tool-query-lab",
+  "thresholds": {
+    "signal": 2,
+    "slack": 1,
+    "confidence": 1,
+    "drag": 2,
+    "ship": 208,
+    "watch": 112
+  },
+  "terms": [
+    "file span",
+    "terminal width",
+    "argument risk",
+    "report density"
+  ]
+}
