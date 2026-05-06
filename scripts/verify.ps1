@@ -67,3 +67,7 @@ if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
 
 powershell -NoProfile -ExecutionPolicy Bypass -File scripts/check-tidal-tool-query-golden.ps1
 if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+
+powershell -NoProfile -ExecutionPolicy Bypass -File scripts/check-tidal_tool_query_lab-casebook.ps1
+if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+
