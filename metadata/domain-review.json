@@ -1,0 +1,73 @@
+{
+  "repo": "tidal-tool-query-lab",
+  "language": "Python",
+  "category": "CLI tools",
+  "goal": "Package a Python local lab for query analysis with bounded scenario files, conflict explanations, and documented operating limits.",
+  "review_model": {
+    "terms": [
+      "file span",
+      "terminal width",
+      "argument risk",
+      "report density"
+    ],
+    "lanes": [
+      "ship",
+      "watch",
+      "hold"
+    ],
+    "score": "signal * 2 + slack + confidence - drag * 3",
+    "purpose": "surface the domain-specific cases that need the most careful review"
+  },
+  "cases": [
+    {
+      "name": "baseline",
+      "focus": "file span",
+      "signal": 79,
+      "slack": 44,
+      "drag": 26,
+      "confidence": 62,
+      "score": 186,
+      "lane": "ship"
+    },
+    {
+      "name": "stress",
+      "focus": "terminal width",
+      "signal": 53,
+      "slack": 23,
+      "drag": 17,
+      "confidence": 49,
+      "score": 127,
+      "lane": "watch"
+    },
+    {
+      "name": "edge",
+      "focus": "argument risk",
+      "signal": 72,
+      "slack": 44,
+      "drag": 21,
+      "confidence": 83,
+      "score": 208,
+      "lane": "ship"
+    },
+    {
+      "name": "recovery",
+      "focus": "report density",
+      "signal": 67,
+      "slack": 34,
+      "drag": 32,
+      "confidence": 92,
+      "score": 164,
+      "lane": "ship"
+    },
+    {
+      "name": "stale",
+      "focus": "file span",
+      "signal": 64,
+      "slack": 51,
+      "drag": 21,
+      "confidence": 94,
+      "score": 210,
+      "lane": "ship"
+    }
+  ]
+}
